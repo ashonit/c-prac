@@ -41,6 +41,19 @@ void testAdd_f(float a, float b, const float expected)
   }
 }
 
+void testAverage(int values[], int length, const float expected)
+{
+  float result = calculateAverage(values, length);
+  if (result == expected)
+  {
+    printf("Average of %d values, got expected value %f.\n", length, expected);
+  }
+  else
+  {
+    printf("Average of %d values, got incorrect result %f, expecting %f.\n", length, result, expected);
+  }
+}
+
 int main(int argc, char *argv[])
 {
   hello();
@@ -56,6 +69,8 @@ int main(int argc, char *argv[])
   testAdd_f(-4.2, 6.3, 2.1);
   testAdd_f(8.8, -6.3, 2.5);
   testAdd_f(-2.6, -101.2, -103.8);
+  int intArray[] = {1, 5, 10, 21, -8};
+  testAverage(intArray, 5, 5.8);
 }
 
 

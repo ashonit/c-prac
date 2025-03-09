@@ -9,4 +9,6 @@ int subtract(int a, int b);
 
 float add_f(float a, float b);
 
+float calculateAverage(int values[], int count);
+
 #endif

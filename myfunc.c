@@ -24,3 +24,7 @@ float add_f(float a, float b)
   return -1.0;
 }
 
+float calculateAverage(int values[], int count)
+{
+  return -1.0;
+}
